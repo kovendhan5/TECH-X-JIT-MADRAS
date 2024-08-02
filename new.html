@@ -42,37 +42,25 @@
     white-space: nowrap;
 }
 
-
-        .looping-logos img {
-            animation: loop 5s linear infinite;
-            width: 10%;
-            margin: 0 1rem;
-        }
-
         .logo {
-            max-width: 500px; /* Set the desired width */
-            max-height: 500px; /* Set the desired height */
+            max-width: 200px; /* Set the desired width */
+            max-height: 200px; /* Set the desired height */
             object-fit: contain; /* Ensures the image scales without distortion */
-            margin: 50px; /* Adjust margin as needed */
+            margin: 40px; /* Adjust margin as needed */
         }
 
         @keyframes loop {
     0% {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translatex(-100%);
     }
 }
 
 .logo-track {
     display: inline-flex;
     animation: loop 10s linear infinite;
-}
-
-.logo-track img {
-    width: 10%;
-    margin: 0 1rem;
 }
 
     </style>
