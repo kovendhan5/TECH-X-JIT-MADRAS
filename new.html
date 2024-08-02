@@ -11,269 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        #navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 8%;
-            background-color: #333;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #E22E38;
-        }
-        .itemsContainer {
-            display: flex;
-            align-items: center;
-        }
-        .items {
-            text-decoration: none;
-            font-size: 1.2rem;
-            color: #fff;
-            margin-left: 2rem;
-            transition: color 0.3s;
-        }
-        .items:hover {
-            color: #E22E38;
-        }
-        .menuContainer {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .menu {
-            height: 3px;
-            width: 25px;
-            background-color: #fff;
-            margin: 4px 0;
-            transition: all 0.3s ease;
-        }
-        #HomeContent {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 2rem 0;
-            background-color: #fff;
-        }
-        .top img {
-            margin: 0 1rem;
-        }
-        .collegeName {
-            font-size: 2rem;
-            letter-spacing: 1px;
-            color: #333;
-        }
-        .address {
-            font-size: 1rem;
-            margin-top: 0.5rem;
-            color: #777;
-        }
-        .extra {
-            margin-top: 1rem;
-            font-size: 1.2rem;
-            color: #E22E38;
-        }
-        .titleImage {
-            margin: 2rem 0;
-            width: 40%;
-            filter: drop-shadow(0 0 0.5rem #E22E38);
-        }
-        .date {
-            margin-top: 1rem;
-            font-size: 1.2rem;
-            color: #333;
-        }
-        .dateSpan {
-            color: #E22E38;
-            font-weight: bold;
-        }
-        #Events {
-            padding: 2rem 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        .eventHeading {
-            font-size: 2rem;
-            color: #E22E38;
-            margin-bottom: 2rem;
-        }
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card img {
-            width: 100%;
-            transition: transform 0.3s;
-        }
-        .card h1 {
-            font-size: 1.5rem;
-            padding: 1rem;
-            font-weight: 600;
-            color: #333;
-        }
-        .moreDetails {
-            display: block;
-            text-align: center;
-            padding: 0.8rem 0;
-            background-color: #E22E38;
-            color: #fff;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .moreDetails:hover {
-            background-color: #C21829;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-        }
-        .card:hover img {
-            transform: scale(1.1);
-        }
-        #co-ordinators {
-            padding: 2rem 0;
-            text-align: center;
-            background-color: #fff;
-        }
-        .container5, .container6, .container7 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .co-ordinator {
-            background-color: #f9f9f9;
-            padding: 1rem;
-            border-radius: 10px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .h2-c {
-            font-size: 1.8rem;
-            color: #E22E38;
-            margin-bottom: 1rem;
-        }
-        .h4-c {
-            font-size: 1.2rem;
-            color: #E22E38;
-        }
-        .h3-c {
-            font-size: 1.5rem;
-            margin: 0.5rem 0;
-            color: #333;
-        }
-        .register {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: #E22E38;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 0.5rem;
-            transition: background-color 0.3s;
-        }
-        .register:hover {
-            background-color: #C21829;
-        }
-        #Contact {
-            padding: 2rem 0;
-            text-align: center;
-            background-color: #f9f9f9;
-        }
-        .headingContact {
-            font-size: 2rem;
-            color: #E22E38;
-        }
-        .icons {
-            color: #E22E38;
-            margin: 0.5rem;
-            font-size: 2rem;
-            transition: color 0.3s;
-        }
-        .icons:hover {
-            color: #333;
-        }
-        .details {
-            margin-top: 1rem;
-            font-size: 1rem;
-            color: #333;
-        }
-        .details a {
-            text-decoration: none;
-            color: #E22E38;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        .details a:hover {
-            color: #333;
-        }
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            padding: 2rem 0;
-            background-color: #fff;
-        }
-        .countdown div {
-            text-align: center;
-            font-size: 2rem;
-            color: #333;
-        }
-        @media (max-width: 768px) {
-            .itemsContainer {
-                display: none;
-                position: fixed;
-                top: 0;
-                right: 0;
-                background-color: #333;
-                width: 60%;
-                height: 100%;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                transform: translateX(100%);
-                transition: transform 0.3s;
-                z-index: 1000;
-            }
-            .itemsContainer.menuTouched {
-                transform: translateX(0);
-            }
-            .items {
-                margin: 1.5rem 0;
-            }
-            .menuContainer {
-                display: flex;
-            }
-        }
-        @media (max-width: 576px) {
-            .top {
-                flex-direction: column;
-            }
-            .titleImage {
-                width: 80%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <section class="hero" id="Home">
@@ -358,31 +96,31 @@
             <div class="co-ordinator">
                 <h3 class="h3-c">Mrs.Benisha</h3>
                 <p>Staff Co-ordinator</p>
-                <a href="" class="register spaceAround"><span>Call Now</span></a>
+                <a href="tel:+916383155415" class="register spaceAround"><span>Call Now</span></a>
             </div>
             <div class="co-ordinator">
                 <h3 class="h3-c">Mrs.Yuvabharathi</h3>
                 <p>Staff Co-ordinator</p>
-                <a href="" class="register spaceAround"><span>Call Now</span></a>
+                <a href="tel:+916383155415" class="register spaceAround"><span>Call Now</span></a>
             </div>
             <div class="co-ordinator">
                 <h3 class="h3-c">Karthik P</h3>
                 <p>Organiser</p>
-                <a href="" class="register spaceAround"><span>Call Now</span></a>
+                <a href="tel:+916383155415" class="register spaceAround"><span>Call Now</span></a>
             </div>
         </div>
         <h2 class="h2-c">CO-ORDINATOR</h2>
         <div class="container7">
             <div class="co-ordinator">
                 <h3 class="h3-c">BEJISTO JOSEPH</h3>
-                <p>IEEE SB</p>
-                <a href="#" class="register spaceAround"><span>Insta @bejisto</span></a>
+                <p>STUDENT CO-ORDINATOR</p>
+                <a href="tel:+919500983398" class="register spaceAround"><span>CALL NOW</span></a>
                 <img src="resources/eventlogo.png" alt="" width="25%" class="titleImage">
             </div>
             <div class="co-ordinator">
-                <h3 class="h3-c">VANA BAHAVAT</h3>
-                <p>IEEE MEMBER</p>
-                <a href="https://www.instagram.com/.k.a.r.t.h.i.k.?igsh=ejhncWV5NHh0c3Zj&utm_source=qr" class="register spaceAround"><span>Insta @k.a.r.t.h.i.k.</span></a>
+                <h3 class="h3-c">VANA BHAVATh</h3>
+                <p>STUDENT CO-ORDINATOR</p>
+                <a href="#" class="register spaceAround"><span>CALL NOW</span></a>
                 <img src="resources/eventlogo.png" alt="" width="25%" class="titleImage">
             </div>
         </div>
