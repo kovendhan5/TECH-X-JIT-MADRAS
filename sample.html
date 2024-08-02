@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JIT TECH X '24'</title>
+    <title>JIT TECH X '24</title>
     <link rel="shortcut icon" href="resources/Ranona24.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/5aec6573df.js" crossorigin="anonymous"></script>
@@ -30,6 +30,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            text-align: center;
         }
 
         .name .logo-left {
@@ -39,25 +40,37 @@
         .looping-logos {
             display: flex;
             justify-content: center;
+            align-items: center;
             overflow: hidden;
+            gap: 10px; /* Adjust the gap between logos as needed */
         }
 
         .looping-logos img {
-            animation: loop 20s linear infinite;
+            animation: loop 10s linear infinite;
             width: 10%;
-            margin: 0 1rem;
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: contain;
+            margin: 10px;
         }
 
         @keyframes loop {
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
+
+        .logo {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit: contain;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
     <section class="hero" id="Home">
         <div id="navbar">
-            <div class="logo">JIT TECH X '24'</div>
+            <div class="logo">JIT TECH X '24</div>
             <div id="navContainer" class="itemsContainer">
                 <ul>
                     <li><a onclick="menuClicked()" class="items" href="#Home">Home</a></li>
@@ -75,27 +88,22 @@
         <div id="HomeContent">
             <div class="top">
                 <div class="logo-container">
-                    <img class="logo-left" src="logos/JIT LOGO - Aqua.png" alt="" width="10%" height="10%">
+                    <img class="logo-left" src="logos/JIT LOGO - Aqua.png" alt="" class="logo">
                     <div class="name">
-                        <center>
-                            <h2 class="collegeName">JEPPIAAR INSTITUTE OF TECHNOLOGY</h2>
-                            <em>SELF BELIEF | SELF DISCIPLINE | SELF RESPECT</em>
-                            <p><small>(An Autonomous Institution)</small></p>
-                        </center>
+                        <h2 class="collegeName">JEPPIAAR INSTITUTE OF TECHNOLOGY</h2>
+                        <em>SELF BELIEF | SELF DISCIPLINE | SELF RESPECT</em>
+                        <p><small>(An Autonomous Institution)</small></p>
                         <p class="address">KUNNAM, SUNGUVARCHATRAM, SRIPERUMBUDUR, CHENNAI-631604</p>
                     </div>
-                    <img class="logo-right" src="logos/NAAC.png" alt="" width="7%" height="20%">
-                    <img class="logo-right" src="logos/NBA.jpg" alt="" width="10%" height="15%">
-                </div>
-                <div class="logo-container">
-                   <!--new-->
+                    <img class="logo-right" src="logos/NAAC.png" alt="" class="logo">
+                    <img class="logo-right" src="logos/NBA.jpg" alt="" class="logo">
                 </div>
             </div>
             <div class="mid">
-                <img src="logos/techX r.png" alt="" width="15%" class="titleImage">
-                <img src="logos/jit sb logo.png" alt="" width="25%"  class="titleImage">
+                <img src="logos/techX r.png" alt="" class="titleImage">
+                <img src="logos/jit sb logo.png" alt="" class="Image">
                 <p class="extra">PROUDLY PRESENTS</p>
-                <img src="logos/TechX JIT logo.jpg" alt="" width="35%" class="titleImage">
+                <img src="logos/TechX JIT logo.jpg" alt="" class="titleImage">
                 <p class="date">An Intercollege Event on <span class="dateSpan">14-03-2024</span></p>
             </div>
         </div>
@@ -122,15 +130,15 @@
         </div>
     </section>
 
-    <section id="looping logos">
+    <section id="looping-logos">
         <div class="looping-logos">
-            <img src="logos/JIT LOGO - Aqua.png" alt="" class="titleImage">
-            <img src="logos/ieee mb black png.png" alt="" class="titleImage">
-            <img src="logos/jit sb logo.png" alt="" class="titleImage">
-            <img src="logos/techX r.png" alt="" class="titleImage">
-            <img src="logos/ieee_cs_syp_logo.png" alt="" class="titleImage">
-            <img src="logos/madras section logo.png" alt="" class="titleImage">
-            <img src="logos/myp logo.png" alt="" class="titleImage">
+            <img src="logos/JIT LOGO - Aqua.png" alt="" class="logo">
+            <img src="logos/ieee mb black png.png" alt="" class="logo">
+            <img src="logos/jit sb logo.png" alt="" class="logo">
+            <img src="logos/techX r.png" alt="" class="logo">
+            <img src="logos/ieee_cs_syp_logo.png" alt="" class="logo">
+            <img src="logos/madras section logo.png" alt="" class="logo">
+            <img src="logos/myp logo.png" alt="" class="logo">
         </div>
     </section>
 
@@ -164,7 +172,7 @@
             </div>
             <div class="co-ordinator">
                 <h3 class="h3-c">Karthik P</h3>
-                <p>STUDENT CO-ORDINATOR</p>
+                <p>Student Co-ordinator</p>
                 <a href="tel:+919789320853" class="register spaceAround"><span>Call Now</span></a>
             </div>
         </div>
@@ -172,14 +180,14 @@
         <div class="container7">
             <div class="co-ordinator">
                 <h3 class="h3-c">BEJISTO JOSEPH</h3>
-                <p>STUDENT CO-ORDINATOR</p>
-                <a href="tel:+919500983398" class="register spaceAround"><span>CALL NOW</span></a>
+                <p>Student Co-ordinator</p>
+                <a href="tel:+919500983398" class="register spaceAround"><span>Call Now</span></a>
                 <img src="resources/eventlogo.png" alt="" width="25%" class="titleImage">
             </div>
             <div class="co-ordinator">
                 <h3 class="h3-c">VANA BHAVATH</h3>
-                <p>STUDENT CO-ORDINATOR</p>
-                <a href="tel:+916374824641" class="register spaceAround"><span>CALL NOW</span></a>
+                <p>Student Co-ordinator</p>
+                <a href="tel:+916374824641" class="register spaceAround"><span>Call Now</span></a>
                 <img src="resources/eventlogo.png" alt="" width="25%" class="titleImage">
             </div>
         </div>
@@ -189,12 +197,12 @@
         <h2 class="headingContact">CONTACT</h2>
         <div>
             <a href="https://www.instagram.com/ranorajit/"><i class="icons fa-brands fa-instagram"></i></a>
-            <a href=""><i class="icons fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="icons fa-brands fa-whatsapp"></i></a>
             <a href="mailto:ranorajit@gmail.com"><i class="icons fa-regular fa-envelope"></i></a>
         </div>
         <h3>DETAILS</h3>
         <div class="details">
-            <p>September 20 ( Thursday )</p>
+            <p>September 20 (Thursday)</p>
             <p>Starts at 9:00 A.M</p>
             <a href="https://www.google.com/maps/place/Jeppiaar+Institute+Of+Technology/@12.889614,79.8745376,17z/data=!3m1!4b1!4m6!3m5!1s0x3a52edd2f17dca51:0x1825c97e3f212814!8m2!3d12.889614!4d79.8745376!16s%2Fm%2F0zwk2sg">Location <span class="material-symbols-outlined">location_on</span></a>
             <p>Jeppiaar Institute of Technology - Campus</p>
@@ -211,6 +219,10 @@
     </div>
 
     <script>
+        function menuClicked() {
+            // Functionality for menu click
+        }
+
         var countDownDate = new Date("Sep 20, 2024 09:00:00").getTime();
         var x = setInterval(function() {
             var now = new Date().getTime();
@@ -219,13 +231,15 @@
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
             document.getElementById("days").innerHTML = days + "d ";
             document.getElementById("hours").innerHTML = hours + "h ";
             document.getElementById("minutes").innerHTML = minutes + "m ";
             document.getElementById("seconds").innerHTML = seconds + "s ";
+
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
+                document.querySelector(".countdown").innerHTML = "EXPIRED";
             }
         }, 1000);
     </script>
