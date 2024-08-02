@@ -387,11 +387,24 @@ body {
         animation: expandingMenu2 1s forwards;
     }
 
-    .chiefGuestImg {
-        width: 47%;
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-}
-
+    
+    .logo-left {
+        align-self: flex-start;
+    }
+    
+    .logo-right {
+        align-self: flex-end;
+    }
+    
+    .collegeName {
+    font-size: 24px; /* Adjust the font size as needed */
+    }
+    
 @media (max-width: 576px) {
     .top {
         flex-direction: column;
@@ -441,4 +454,5 @@ body {
     100% {
         opacity: 1;
     }
+}
 }
