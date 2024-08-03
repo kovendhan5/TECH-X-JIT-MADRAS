@@ -193,14 +193,14 @@ body {
     display: block;
     text-align: center;
     padding: 0.8rem 0;
-    background-color: #E22E38;
+    background-color:  #007BFF;
     color: #fff;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .moreDetails:hover {
-    background-color: #C21829;
+    background-color:  #0056bf;
 }
 
 .card:hover {
@@ -232,30 +232,32 @@ body {
 .register {
     text-decoration: none;
     color: white;
-    background-color: rgb(117, 5, 27);
-    border: 1px solid rgb(117, 5, 27);
+    background-color: rgb(17, 121, 233);
+    border: 1px solid rgb(17, 121, 233);
     border-radius: 8px;
     padding: 12px 24px;
 }
 
 .register:hover {
-    background-color: rgb(153, 4, 33);
+    color: rgb(31, 147, 230);
+    background-color: transparent;
+    border-color: rgb(30, 118, 206);
 }
 
 .moreDetails {
     text-decoration: none;
     color: white;
-    background-color: rgb(117, 5, 27);
-    border: 1px solid rgb(117, 5, 27);
+    background-color:  #007BFF;
+    border: 1px solid  #007BFF;
     border-radius: 10px;
     padding: .8em 1.6em;
     margin: .5em 1.5rem 1.5em;
 }
 
 .moreDetails:hover {
-    color: rgb(161, 14, 43);
+    color: rgb(31, 147, 230);
     background-color: transparent;
-    border-color: rgb(161, 14, 43);
+    border-color: rgb(30, 118, 206);
 }
 
 /* Co-ordinators */
